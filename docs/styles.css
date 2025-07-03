@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 2rem;
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  font-family: 'Geist', sans-serif;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Instrument Serif', serif;
+  color: #fff;
+}
+
+a {
+  color: #4ef3c0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.note {
+  font-style: italic;
+  color: #999;
+  margin-top: 2rem;
+}
+
+.project-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-list li {
+  margin-bottom: 0.5rem;
+}
+
+.superscript {
+  font-size: 0.8rem;
+  vertical-align: super;
+}
+
+.cv-section {
+  margin-top: 2rem;
+}
+
+.cv-section dl {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.cv-section dt {
+  font-weight: bold;
+}
+
+.cv-section dd {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140, 140, 140);
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  font-family: 'Geist Mono', serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+table td {
+  border: 1px solid white;
+  padding: 8px;
+}
