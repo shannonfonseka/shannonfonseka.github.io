@@ -1,16 +1,21 @@
+/* Reset & Base Styles */
 body {
   margin: 0;
-  padding: 2rem;
+  padding: 0;
   background-color: #0d0d0d;
   color: #f0f0f0;
   font-family: 'Geist', sans-serif;
   line-height: 1.6;
-  letter-spacing: 1px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: 'Instrument Serif', serif;
   color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0 0 1rem;
 }
 
 a {
@@ -22,62 +27,114 @@ a:hover {
   text-decoration: underline;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
+/* Hero Section */
+.hero {
+  background: #111;
+  text-align: center;
+  padding: 5rem 2rem;
 }
 
-.note {
-  font-style: italic;
-  color: #999;
-  margin-top: 2rem;
+.hero h1 {
+  font-size: 3rem;
 }
 
-.project-list {
-  list-style: none;
-  padding-left: 0;
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem;
 }
 
-.project-list li {
-  margin-bottom: 0.5rem;
-}
-
-.superscript {
-  font-size: 0.8rem;
-  vertical-align: super;
-}
-
-.cv-section {
-  margin-top: 2rem;
-}
-
-.cv-section dl {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-.cv-section dt {
+.cta {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background: #4ef3c0;
+  color: #000;
   font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
-.cv-section dd {
-  margin: 0;
+.cta:hover {
+  background: #31cfa1;
 }
 
-table {
-  border-collapse: collapse;
-  border: 2px solid rgb(140, 140, 140);
-  background-color: #000;
-  color: #fff;
-  width: 100%;
-  font-family: 'Geist Mono', serif;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
+/* About Section */
+.about {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 2rem;
 }
 
-table td {
-  border: 1px solid white;
-  padding: 8px;
+/* Projects */
+.projects {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.project-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.project-card {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  border-color: #4ef3c0;
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #111;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.contact-links a {
+  background: #222;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.contact-links a:hover {
+  background: #4ef3c0;
+  color: #000;
+}
+
+footer p {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* Utilities */
+code {
+  font-family: 'Geist Mono', monospace;
+  background: #222;
+  padding: 2px 5px;
+  border-radius: 4px;
 }
