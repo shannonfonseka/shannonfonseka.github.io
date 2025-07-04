@@ -1,20 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shannon Fonseka</title>
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&display=swap"
+    rel="stylesheet" />
   <link href=" https://api.fontshare.com/v2/css?f[]=geist@400,700&f[]=geist-mono@400&display=swap" rel="stylesheet" />
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.onload = function () {
+      // Load header
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+
+      // Load footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    };
+  </script>
 </head>
+
 <body>
-  <header class="hero">
-    <div class="hero-content">
-      <h1>🏗️🚧 This site is under construction!</h1>
+  <header>
+    <div class="hero" style="margin: -100px;">
+      <h1>🏗️🚧 THIS SITE IS WORK IN PROGRESS 🤚🏼🛑</h1>
     </div>
+    <div id="header-placeholder"></div>
   </header>
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      21-year-old dev obsessed with <strong>software engineering</strong>,
+      <strong>data & server management</strong>,
+      <strong>multimedia editing</strong>, and <strong>3D design</strong>.
+      Currently learning <code>C#</code>, <code>Python</code>,
+      <code>Java</code>, <code>Cpp</code>, <code>SQL</code>,
+      <code>GD Script</code>, and <code>Kotlin</code>. Dreaming of building
+      tools to change the world one byte at a time 🚀.
+    </p>
+  </section>
+  <section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <h3>Completed Projects</h3>
+    <p>These projects have been tested and are production-ready, and they are currently under active development.</p>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Electron.js Setup</h3>
+        <p>A simple script which helps you create projects using Electron.js</p>
+        <a href=" https://github.com/fonseware/electronjs-setup/ " target="_blank">View on GitHub</a>
+      </div>
+    </div>
+    <h3 style="margin-top: 40px;">Work-In-Progress Projects</h3>
+    <p>⚠️ Note: These projects are currently under active development and require extensive testing. Please be aware that they may contain bugs or incomplete features.</p>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Screen(tool)box</h3>
+        <p>A set of experimental screen utilities in development.</p>
+        <a href="https://github.com/fonseware/screenbox " target="_blank">Preview Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Vendere</h3>
+        <p>Modern POS prototype with custom desktop integrations.</p>
+        <a href="https://github.com/fonseware/vendere " target="_blank">Check It Out</a>
+      </div>
+      <div class="project-card">
+        <h3>Vauhlt for PC</h3>
+        <p>A desktop vault and utility manager for productivity freaks.</p>
+        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+      </div>
+    </div>
+    <h3 style="margin-top: 40px;">Deprecated Projects</h3>
+    <p>⚠️ Note: These projects are no longer actively maintained and may not function as expected. They are provided for reference or historical purposes only.</p>
+    <div class="project-grid">
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+      <div class="project-card">
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer>
+    <div id="footer-placeholder"></div>
+  </footer>
 </body>
+
 </html>

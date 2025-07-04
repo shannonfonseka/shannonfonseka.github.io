@@ -8,19 +8,31 @@
 body {
   background-color: #0f0f0f;
   color: #eaeaea;
-  font-family: 'Geist', sans-serif;
+  font-family: "Geist", sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-h1, h2, h3 {
-  font-family: 'Instrument Serif', serif;
+h1,
+h2,
+h3 {
+  font-family: "Instrument Serif", serif;
   color: #ffffff;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 p {
-  margin: 0 0 1rem;
+  margin: 0 0 16px;
 }
 
 a {
@@ -30,16 +42,17 @@ a {
 }
 
 a:hover {
-  color: #00d4ff;
+  color: #7df9ff;
 }
 
 /* Hero Section */
 .hero {
   background: linear-gradient(145deg, #121212, #1b1b1b);
   text-align: center;
-  padding: 8rem 2rem 6rem;
+  padding: 128px 32px 96px;
   position: relative;
   overflow: hidden;
+  margin: -20px;
 }
 
 .hero::before {
@@ -49,15 +62,28 @@ a:hover {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at center, rgba(125, 249, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle at center,
+      rgba(125, 249, 255, 0.1) 0%,
+      transparent 70%);
   z-index: 0;
   animation: pulse 6s infinite ease-in-out;
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.05); opacity: 0.8; }
-  100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .hero-content {
@@ -66,20 +92,20 @@ a:hover {
 }
 
 .hero h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
+  font-size: 56px;
+  margin-bottom: 16px;
 }
 
 .hero p {
-  font-size: 1.3rem;
+  font-size: 20.8px;
   max-width: 600px;
-  margin: 0 auto 2rem;
+  margin: 0 auto 32px;
   color: #cccccc;
 }
 
 .cta {
   display: inline-block;
-  padding: 0.9rem 2rem;
+  padding: 14.4px 32px;
   background: #7df9ff;
   color: #000;
   font-weight: bold;
@@ -90,19 +116,20 @@ a:hover {
 
 .cta:hover {
   background: #00d4ff;
+  color: #000000;
   box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
 }
 
 /* About Section */
 .about {
   max-width: 800px;
-  margin: 5rem auto;
-  padding: 0 2rem;
+  margin: 80px auto;
+  padding: 0 32px;
   text-align: center;
 }
 
 .about p {
-  font-size: 1.1rem;
+  font-size: 17.6px;
   color: #bbbbbb;
 }
 
@@ -113,19 +140,19 @@ a:hover {
 /* Projects */
 .projects {
   max-width: 1100px;
-  margin: 5rem auto;
-  padding: 0 2rem;
+  margin: 80px auto;
+  padding: 0 2px;
 }
 
 .project-grid {
   display: grid;
-  gap: 2rem;
+  gap: 32px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .project-card {
   background: #1a1a1a;
-  padding: 2rem;
+  padding: 32px;
   border-radius: 16px;
   border: 1px solid #333;
   transition: all 0.3s ease;
@@ -140,12 +167,12 @@ a:hover {
 
 .project-card h3 {
   margin-top: 0;
-  font-size: 1.4rem;
+  font-size: 22.4px;
 }
 
 .project-card a {
   display: inline-block;
-  margin-top: 0.8rem;
+  margin-top: 12.8px;
   color: #7df9ff;
   font-weight: 500;
 }
@@ -153,33 +180,34 @@ a:hover {
 /* Contact Section */
 .contact {
   text-align: center;
-  padding: 6rem 2rem 4rem;
+  padding: 96px 32px 64px;
   background: #121212;
+  margin: -20px;
 }
 
 .contact h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .contact p {
-  font-size: 1rem;
+  font-size: 16px;
   color: #aaaaaa;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .contact-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.2rem;
-  margin: 1.5rem 0;
+  gap: 24px;
+  margin: 24px 0;
 }
 
 .contact-links a {
   background: #222;
-  padding: 0.9rem 1.5rem;
+  padding: 14.4px 24px;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 16px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -192,13 +220,13 @@ a:hover {
 
 footer p.copyright {
   color: #666;
-  font-size: 0.85rem;
-  margin-top: 2rem;
+  font-size: 13.6px;
+  margin-top: 32px;
 }
 
 /* Utilities */
 code {
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
   background: #222;
   padding: 2px 5px;
   border-radius: 4px;
