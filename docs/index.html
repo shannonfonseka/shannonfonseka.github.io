@@ -10,18 +10,18 @@
     rel="stylesheet" />
   <link href=" https://api.fontshare.com/v2/css?f[]=geist@400,700&f[]=geist-mono@400&display=swap" rel="stylesheet" />
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="res/styles.css" />
   <script>
     window.onload = function () {
       // Load header
-      fetch("header.html")
+      fetch("res/header.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("header-placeholder").innerHTML = data;
         });
 
       // Load footer
-      fetch("footer.html")
+      fetch("res/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;
@@ -61,7 +61,7 @@
       </div>
     </div>
     <h3 style="margin-top: 40px;">Work-In-Progress Projects</h3>
-    <p>⚠️ Note: These projects are currently under active development and require extensive testing. Please be aware that they may contain bugs or incomplete features.</p>
+    <p><i>⚠️ Note: These projects are currently under active development and require extensive testing. Please be aware that they may contain bugs or incomplete features.</i></p>
     <div class="project-grid">
       <div class="project-card">
         <h3>Screen(tool)box</h3>
@@ -80,9 +80,68 @@
       </div>
     </div>
     <h3 style="margin-top: 40px;">Deprecated Projects</h3>
-    <p>⚠️ Note: These projects are no longer actively maintained and may not function as expected. They are provided for reference or historical purposes only.</p>
+    <p><i>⚠️ Note: These projects are no longer actively maintained and may not function as expected. They are provided for reference or historical purposes only.</i>
+    </br></br>
+      Most of these projects were created when I was just a kid — they represent my early passion for programming and mark the beginning of my journey into software engineering. While they may not reflect my current standards or practices, they played a crucial role in shaping my skills and curiosity.</br></br>
+      If you're interested in how I've grown as a developer, feel free to explore these projects as a snapshot of my early beginnings.</p>
     <div class="project-grid">
       <div class="project-card">
+        <h3>Libre WebMaker (app)</h3>
+        <p>An open source website editor made using MIT App Inventor 2 for Android devices. This project was created in
+          2017.</p>
+        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+      </div>
+      <div class="project-card">
+        <h3>Shannon Play (app)</h3>
+        <p>A closed-source; now open source project, where users could stream content from a Firebase DB using an
+          Android device. This project was created in 2018.</p>
+        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+      </div>
+      <div class="project-card">
+        <h3>Zepto Web Browser</h3>
+        <p>A desktop vault and utility manager for productivity freaks. This project was created in 2016.</p>
+        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+      </div>
+      <div class="project-card">
+        <h3>Libre WebMaker (desktop)</h3>
+        <p>An open source website editor made using VB.NET for Windows devices. This project was created in 2018.</p>
+        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+      </div>
+      <div class="project-card">
+        <h3>Libre Programmer</h3>
+        <p>An open-source multipurpose editor made using VB.NET for Windows devices. This project was created in late
+          2018.</p>
+        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+      </div>
+      <div class="project-card">
+        <h3>Libre Author</h3>
+        <p>An open source word processor made using VB.NET for Windows devices. This project was created in 2018.</p>
+        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+      </div>
+      <div class="project-card">
+        <h3>Libre Defender</h3>
+        <p>An open source antivirus guard made using VB.NET for Windows devices. This project was created in 2018.</p>
+        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+      </div>
+      <div class="project-card">
+        <h3>Shannon Play (desktop)</h3>
+        <p>An open source word processor made using VB.NET for Windows devices. This project was created in 2018.</p>
+        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+      </div>
+      <div class="project-card">
+        <h3>Jote.TV</h3>
+        <p>An open source word processor made using VB.NET for Windows devices. This project was created in 2018.</p>
+        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+      </div>
+      <div class="project-card">
+        <h3>S-cable (desktop)</h3>
+        <p>An open source word processor made using VB.NET for Windows devices. This project was created in 2018.</p>
+        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+      </div>
+      <div class="project-card">
+        <h3>Fuse Pro</h3>
+        <p>An open source word processor made using VB.NET for Windows devices. This project was created in 2018.</p>
+        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
       </div>
       <div class="project-card">
       </div>
@@ -106,29 +165,6 @@
       </div>
       <div class="project-card">
       </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-    </div>
     </div>
   </section>
   <footer>

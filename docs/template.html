@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shannon Fonseka</title>
+  <link rel="icon" href="res/favicon.ico" type="image/x-icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&display=swap"
+    rel="stylesheet" />
+  <link href=" https://api.fontshare.com/v2/css?f[]=geist@400,700&f[]=geist-mono@400&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.onload = function () {
+      // Load header
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+
+      // Load footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    };
+  </script>
+</head>
+
+<body>
+  <header>
+    <div id="header-placeholder"></div>
+  </header>
+    <section id="template" class="about">
+    <h2>Enter heading here</h2>
+    <p>Enter paragraph of text here.</p>
+    <!--ENTER YOU CODE HERE-->
+  </section>
+  <section id="template" class="projects">
+    <h2>Enter heading here</h2>
+    <p>Enter paragraph of text here.</p>
+    <!--ENTER YOU CODE HERE-->
+  </section>
+  <footer>
+    <div id="footer-placeholder"></div>
+  </footer>
+</body>
+
+</html>
