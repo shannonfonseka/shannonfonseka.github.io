@@ -2,30 +2,47 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Docs - Shannon Fonseka</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="js/marked.min.js"></script>
-  <script src="js/docloader.js"></script>
+    <meta charset="UTF-8">
+    <title>Docs - Shannon Fonseka</title>
+    <link href="res/styles.css" rel="stylesheet"/>
+    <script src="js/marked.min.js"></script>
+    <script src="js/docloader.js"></script>
+    <script>
+        window.onload = function () {
+            // Load header
+            fetch("res/header.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById("header-placeholder").innerHTML = data;
+                });
+
+            // Load footer
+            fetch("res/footer.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById("footer-placeholder").innerHTML = data;
+                });
+        };
+    </script>
 </head>
 
 <body>
-  <!-- header here -->
-  <header class="hero"> ... </header>
+<header>
+    <div id="header-placeholder"></div>
+</header>
 
-  <section class="about">
-    <h2>Documentation</h2>
+<section class="about">
     <div id="doc-content">Loading doc...</div>
-  </section>
+</section>
 
-  <!-- footer here -->
-  <footer class="contact"> ... </footer>
+<footer>
+    <div id="footer-placeholder"></div>
+</footer>
 
-  <script>
+<script>
     const urlParams = new URLSearchParams(window.location.search);
-    const doc = urlParams.get('doc') || 'docs/doc1.md';
+    const doc = urlParams.get('doc') || 'docs/docs.md';
     loadMarkdownDoc(doc);
-  </script>
+</script>
 </body>
-
 </html>

@@ -2,174 +2,171 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shannon Fonseka</title>
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&display=swap"
-    rel="stylesheet" />
-  <link href=" https://api.fontshare.com/v2/css?f[]=geist@400,700&f[]=geist-mono@400&display=swap" rel="stylesheet" />
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="res/styles.css" />
-  <script>
-    window.onload = function () {
-      // Load header
-      fetch("res/header.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("header-placeholder").innerHTML = data;
-        });
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Shannon Fonseka</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&display=swap"
+          rel="stylesheet"/>
+    <link href=" https://api.fontshare.com/v2/css?f[]=geist@400,700&f[]=geist-mono@400&display=swap" rel="stylesheet"/>
+    <!-- Stylesheet -->
+    <link href="res/styles.css" rel="stylesheet"/>
+    <script>
+        window.onload = function () {
+            // Load header
+            fetch("res/header.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById("header-placeholder").innerHTML = data;
+                });
 
-      // Load footer
-      fetch("res/footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-        });
-    };
-  </script>
+            // Load footer
+            fetch("res/footer.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById("footer-placeholder").innerHTML = data;
+                });
+        };
+    </script>
 </head>
 
 <body>
-  <header>
-    <div class="hero">
-      <h1>🏗️🚧 THIS SITE IS WORK IN PROGRESS 🤚🏼🛑</h1>
-    </div>
+<header>
     <div id="header-placeholder"></div>
-  </header>
-  <section class="about">
+</header>
+<section class="about">
     <h2>About Me</h2>
     <p>
-      21-year-old dev obsessed with <strong>software engineering</strong>,
-      <strong>data & server management</strong>,
-      <strong>multimedia editing</strong>, and <strong>3D design</strong>.
-      Currently learning <code>C#</code>, <code>Python</code>,
-      <code>Java</code>, <code>Cpp</code>, <code>SQL</code>,
-      <code>GD Script</code>, and <code>Kotlin</code>. Dreaming of building
-      tools to change the world one byte at a time 🚀.
+        21-year-old dev obsessed with <strong>software engineering</strong>,
+        <strong>data & server management</strong>,
+        <strong>multimedia editing</strong>, and <strong>3D design</strong>.
+        Currently learning <code>C#</code>, <code>Python</code>,
+        <code>Java</code>, <code>Cpp</code>, <code>SQL</code>,
+        <code>GD Script</code>, and <code>Kotlin</code>. Dreaming of building
+        tools to change the world one byte at a time 🚀.
     </p>
-  </section>
-  <section id="projects" class="projects">
+</section>
+<section class="projects" id="projects">
     <h2>Featured Projects</h2>
     <h3>Completed Projects</h3>
     <p>These projects have been tested and are production-ready, and they are currently under active development.</p>
     <div class="project-grid">
-      <div class="project-card">
-        <h3>Electron.js Setup</h3>
-        <p>A simple script which helps you create projects using Electron.js</p>
-        <a href=" https://github.com/fonseware/electronjs-setup/ " target="_blank">View on GitHub</a>
-      </div>
+        <div class="project-card">
+            <h3>Electron.js Setup</h3>
+            <p>A simple script which helps you create projects using Electron.js</p>
+            <a href=" https://github.com/fonseware/electronjs-setup/ " target="_blank">View on GitHub</a>
+        </div>
     </div>
     <h3 style="margin-top: 40px;">Work-In-Progress Projects</h3>
-    <p><i>⚠️ Note: These projects are currently under active development and require extensive testing. Please be aware that they may contain bugs or incomplete features.</i></p>
+    <p><i>⚠️ Note: These projects are currently under active development and require extensive testing. Please be aware
+        that they may contain bugs or incomplete features.</i></p>
     <div class="project-grid">
-      <div class="project-card">
-        <h3>Screen(tool)box</h3>
-        <p>A set of experimental screen utilities in development.</p>
-        <a href="https://github.com/fonseware/screenbox " target="_blank">Preview Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Vendere</h3>
-        <p>Modern POS prototype with custom desktop integrations.</p>
-        <a href="https://github.com/fonseware/vendere " target="_blank">Check It Out</a>
-      </div>
-      <div class="project-card">
-        <h3>Vauhlt for PC</h3>
-        <p>A desktop vault and utility manager for productivity freaks.</p>
-        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
-      </div>
+        <div class="project-card">
+            <h3>Screen(tool)box</h3>
+            <p>A set of experimental screen utilities in development.</p>
+            <a href="https://github.com/fonseware/screenbox " target="_blank">Preview Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Vendere</h3>
+            <p>Modern POS prototype with custom desktop integrations.</p>
+            <a href="https://github.com/fonseware/vendere " target="_blank">Check It Out</a>
+        </div>
+        <div class="project-card">
+            <h3>Vauhlt for PC</h3>
+            <p>A desktop vault and utility manager for productivity freaks.</p>
+            <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+        </div>
     </div>
     <h3 style="margin-top: 40px;">Deprecated Projects</h3>
-    <p><i>⚠️ Note: These projects are no longer actively maintained and may not function as expected. They are provided for reference or historical purposes only.</i>
-    </br></br>
-      Most of these projects were created when I was just a kid — they represent my early passion for programming and mark the beginning of my journey into software engineering. While they may not reflect my current standards or practices, they played a crucial role in shaping my skills and curiosity.</br></br>
-      If you're interested in how I've grown as a developer, feel free to explore these projects as a snapshot of my early beginnings.</p>
+    <p><i>⚠️ Note: These projects are no longer actively maintained and may not function as expected. They are provided
+        for reference or historical purposes only.</i>
+        </br></br>
+        Most of these projects were created when I was just a kid — they represent my early passion for programming and
+        mark the beginning of my journey into software engineering. While they may not reflect my current standards or
+        practices, they played a crucial role in shaping my skills and curiosity.</br></br>
+        If you're interested in how I've grown as a developer, feel free to explore these projects as a snapshot of my
+        early beginnings.</p>
     <div class="project-grid">
-      <div class="project-card">
-        <h3>Libre WebMaker (app)</h3>
-        <p>An open source website editor made using MIT App Inventor 2 for Android devices. This project was created in
-          2017.</p>
-        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
-      </div>
-      <div class="project-card">
-        <h3>Shannon Play (app)</h3>
-        <p>A closed-source; now open source project, where users could stream content from a Firebase DB using an
-          Android device. This project was created in 2018.</p>
-        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
-      </div>
-      <div class="project-card">
-        <h3>Zepto Web Browser</h3>
-        <p>A desktop vault and utility manager for productivity freaks. This project was created in 2016.</p>
-        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
-      </div>
-      <div class="project-card">
-        <h3>Libre WebMaker (desktop)</h3>
-        <p>An open source website editor made using VB.NET for Windows devices. This project was created in 2018.</p>
-        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
-      </div>
-      <div class="project-card">
-        <h3>Libre Programmer</h3>
-        <p>An open-source multipurpose editor made using VB.NET for Windows devices. This project was created in late
-          2018.</p>
-        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
-      </div>
-      <div class="project-card">
-        <h3>Libre Author</h3>
-        <p>An open source word processor made using VB.NET for Windows devices. This project was created in 2018.</p>
-        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
-      </div>
-      <div class="project-card">
-        <h3>Libre Defender</h3>
-        <p>An open source antivirus guard made using VB.NET for Windows devices. This project was created in 2018.</p>
-        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
-      </div>
-      <div class="project-card">
-        <h3>Shannon Play (desktop)</h3>
-        <p>An open source word processor made using VB.NET for Windows devices. This project was created in 2018.</p>
-        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
-      </div>
-      <div class="project-card">
-        <h3>Jote.TV</h3>
-        <p>An open source word processor made using VB.NET for Windows devices. This project was created in 2018.</p>
-        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
-      </div>
-      <div class="project-card">
-        <h3>S-cable (desktop)</h3>
-        <p>An open source word processor made using VB.NET for Windows devices. This project was created in 2018.</p>
-        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
-      </div>
-      <div class="project-card">
-        <h3>Fuse Pro</h3>
-        <p>An open source word processor made using VB.NET for Windows devices. This project was created in 2018.</p>
-        <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
-      <div class="project-card">
-      </div>
+        <div class="project-card">
+            <h3>Libre WebMaker (app)</h3>
+            <p>An open source website editor made using MIT App Inventor 2 for Android devices. This project was created
+                in
+                2017.</p>
+            <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+        </div>
+        <div class="project-card">
+            <h3>Shannon Play (app)</h3>
+            <p>A closed-source; now open source project, where users could stream content from a Firebase DB using an
+                Android device. This project was created in 2018.</p>
+            <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+        </div>
+        <div class="project-card">
+            <h3>Zepto Web Browser</h3>
+            <p>A desktop vault and utility manager for productivity freaks. This project was created in 2016.</p>
+            <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+        </div>
+        <div class="project-card">
+            <h3>Libre WebMaker (desktop)</h3>
+            <p>An open source website editor made using VB.NET for Windows devices. This project was created in
+                2018.</p>
+            <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+        </div>
+        <div class="project-card">
+            <h3>Libre Programmer</h3>
+            <p>An open-source multipurpose editor made using VB.NET for Windows devices. This project was created in
+                late
+                2018.</p>
+            <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+        </div>
+        <div class="project-card">
+            <h3>Libre Author</h3>
+            <p>An open source word processor made using VB.NET for Windows devices. This project was created in
+                2018.</p>
+            <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+        </div>
+        <div class="project-card">
+            <h3>Libre Defender</h3>
+            <p>An open source antivirus guard made using VB.NET for Windows devices. This project was created in
+                2018.</p>
+            <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+        </div>
+        <div class="project-card">
+            <h3>Shannon Play (desktop)</h3>
+            <p>An open source word processor made using VB.NET for Windows devices. This project was created in
+                2018.</p>
+            <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+        </div>
+        <div class="project-card">
+            <h3>Jote.TV</h3>
+            <p>An open source word processor made using VB.NET for Windows devices. This project was created in
+                2018.</p>
+            <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+        </div>
+        <div class="project-card">
+            <h3>S-cable (desktop)</h3>
+            <p>An open source word processor made using VB.NET for Windows devices. This project was created in
+                2018.</p>
+            <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+        </div>
+        <div class="project-card">
+            <h3>Fuse Pro</h3>
+            <p>An open source word processor made using VB.NET for Windows devices. This project was created in
+                2018.</p>
+            <a href="https://github.com/fonseware/vauhltdesktop " target="_blank">See Details</a>
+        </div>
+        <div class="project-card">
+            <h3>Sample Docs</h3>
+            <a href="docs.html?doc=docs/docs.md">See Details</a>
+        </div>
+        <div class="project-card">
+            <h3>Sample Docs 2</h3>
+            <a href="docs.html?doc=docs/doc.md">See Details</a>
+        </div>
     </div>
-  </section>
-  <footer>
+</section>
+<footer>
     <div id="footer-placeholder"></div>
-  </footer>
+</footer>
 </body>
 
 </html>
